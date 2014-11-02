@@ -8,7 +8,9 @@
     "grunt-purescript": "^0.5.2"
   },
   "devDependencies": {
-    "grunt-contrib-watch": "~0.6.1"
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-execute": "~0.2.2",
+    "grunt-run": "~0.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
