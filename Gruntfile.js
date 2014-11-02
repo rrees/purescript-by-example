@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
   "use strict";
 
+  var defaultTasks = ["psc:all", "dotPsci"]
+
   grunt.initConfig({
     srcFiles: [
       "src/**/*.purs",
@@ -17,10 +19,18 @@ module.exports = function(grunt) {
         src: ["<%=srcFiles%>"],
         dest: "dist/Main.js"
       }
+    },
+
+    dotPsci: ["<%=srcFiles%>"],
+
+    watch : {
+      files: "src/**/*.purs",
+      tasks: defaultTasks
     }
   });
 
   grunt.loadNpmTasks("grunt-purescript");
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask("default", ["psc:all"]);
+  grunt.registerTask("default", defaultTasks);
 }
