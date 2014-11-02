@@ -1,0 +1,24 @@
+{
+  "name": "purescript-by-example",
+  "version": "0.0.1",
+  "description": "Purescript by example",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-purescript": "^0.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rrees/purescript-by-example.git"
+  },
+  "author": "",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/rrees/purescript-by-example/issues"
+  },
+  "homepage": "https://github.com/rrees/purescript-by-example"
+}
