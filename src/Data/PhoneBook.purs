@@ -11,3 +11,10 @@ type PhoneBook = List Entry
 
 showEntry :: Entry -> String
 showEntry entry = entry.lastName ++ ", " ++ entry.firstName ++ ": " ++ entry.phone
+
+emptyBook :: PhoneBook
+emptyBook = empty
+
+insertEntry :: Entry -> PhoneBook -> PhoneBook
+insertEntry = Cons
+
